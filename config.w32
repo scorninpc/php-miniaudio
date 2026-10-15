@@ -1,0 +1,6 @@
+ARG_ENABLE("miniaudio", "miniaudio support", "no");
+
+if (PHP_MINIAUDIO != "no") {
+	EXTENSION("miniaudio", "miniaudio.c");
+	ADD_FLAG("LIBS", "ole32.lib user32.lib winmm.lib");
+}

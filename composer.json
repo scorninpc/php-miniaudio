@@ -1,0 +1,19 @@
+{
+    "name": "scorninpc/miniaudio",
+    "type": "php-ext",
+    "license": "MIT License",
+    "description": "Extension to play audios with php",
+    "require": {
+        "php": "^8"
+    },
+    "php-ext": {
+        "extension-name": "miniaudio",
+        "configure-options": [
+            {
+                "name": "enable-miniaudio",
+                "needs-value": false,
+                "description": "whether to enable miniaudio support"
+            }
+        ]
+    }
+}
